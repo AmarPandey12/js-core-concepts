@@ -1,0 +1,55 @@
+<html>
+    <title>Demo event bubbling</head></title>   j
+    <style>
+        #outer {
+            background-color: aquamarine ; 
+            width: 400px; 
+            height: 300px;
+            text-align: center;
+        }
+        #inner {
+            background-color:chocolate; 
+            width: 200px; 
+            height: 150px;
+            text-align: center;
+           padding: 33px; ;
+        }
+    </style>
+    <body>
+        <div id="outer">
+            <div id="inner"></div>
+        </div>  
+        <script>
+            let outerArea = document.getElementById('outer');
+            var innerArea = document.getElementById('inner');
+
+            // console.log(innerArea);
+
+            outerEvent = () => {
+                alert('outer area clicked');
+            }
+
+            innerEvent = () => {
+                alert('inner area clicked');
+                // To stop clicking outer area after innner one
+                // event.stopImmediatePropagation();
+            }
+
+            // if(innerArea){
+            // In this case if inner area is clicked, automatically outer area click event will be fired
+            // This is known event bubbling
+            outerArea.addEventListener('click', outerEvent);
+            innerArea.addEventListener('click', innerEvent);
+
+            
+            // To get this vice versa i.e. event transition
+            // outerArea.addEventListener('click', outerEvent, true);
+            // innerArea.addEventListener('click', innerEvent, true);
+            // }
+            
+
+            
+        </script>
+          
+    </body>
+</html>

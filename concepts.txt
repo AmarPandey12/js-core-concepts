@@ -1,0 +1,9 @@
+how to handle javascript memory problems.
+What are clusters. When to use.
+What is function scoping technique.
+When to use stream.
+Along the way, you're going to be learning about things like modules management, V8, concurrency and event loop, streams, child processes, and clusters. 
+    You'll also be using npm and Node's event-driven modules for networking and HTTP web servers.
+
+console.log(a);
+let a  = 10;

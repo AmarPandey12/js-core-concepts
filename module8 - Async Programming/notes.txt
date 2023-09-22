@@ -1,0 +1,12 @@
+What is asynchronous programming
+Synchronous VS Asynchromous programming
+ReadFile VS ReadFileSync
+Node architecture - Call stack -> output / Task Queue / micro task queue / -> callback queue -> event loop
+Serial execution of Async code
+Promises
+States of Promise
+Promises and Async Await
+MicroTask Queue
+
+
+Note: callback operations which are inside call back queue are never in sequence
