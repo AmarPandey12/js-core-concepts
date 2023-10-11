@@ -16,11 +16,11 @@
 // Problem 3
 // var can be redeclared and reassigned both
 var a=0;
-// for(var a=2; a<=10; a++){
-//     setTimeout(function(){
-//         console.log(a);
-//     },1000);
-// }
+for(var a=2; a<=10; a++){
+    setTimeout(function(){
+        console.log(a);
+    },1000);
+}
 
 
 console.log(typeof (new(class{class(){}})));

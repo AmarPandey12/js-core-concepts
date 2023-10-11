@@ -63,7 +63,7 @@ let myObj = {
 
 let {name, age, gender, address: {country}} = myObj;
 
-// console.log(address);
+console.log(address);
 
 // To destructure this nested object
 console.log(country);
